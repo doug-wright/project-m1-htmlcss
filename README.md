@@ -2,8 +2,9 @@
 
 ## Description
 
-Create an HTML file and a CSS file that reproduces the following (there is also a screenshot at the bottom.)
-https://youtu.be/_t29BK3Tseg
+Create an HTML file and a CSS file that reproduces a web page from the provided mockup.
+
+<img src='./screenshots/screenshot.png' style="height:800px;float:right;margin-left: 20px;" />
 
 ## Instructions and tips to succeed
 
@@ -36,15 +37,13 @@ Following the first point, it's fine to struggle on a feature which you want to 
 - It's normal to run into obstacles, it is part of the learning process. **If you're not struggling, you're not learning.**
 - The instructor and the T.Cs are here to help **guide** you.
 
-### 5. Where is the mobile mockup?
+### 5. Where is the mobile mockup? Tablet?
 
-Part of the project is to ensure that the page looks decent on mobile as well as desktop. Unfortunately, you haven't been provided with a mockup, or screenshot of how the mobile version should/could look. Unfortunately, this happens quite often.
-
-Even without a design, it's generally better for this type of web page to consider mobile-first. The mobile version is generally easier to implement, and without a mockup, you have some freedom there. It will also mean less code overall.
+Part of the project is to ensure that the page looks decent on mobile as well as desktop. It's generally better for this type of web page to consider mobile-first. The mobile version is generally easier to implement, and usually means less code overall.
 
 You should also work section by section. e.g. create the mobile version of the nav, adjust the code for the desktop version of the nav, move on to the next section.
 
-Use the above video to help guide you for the mobile version.
+You will find a few gifs at the bottom of this file. They show what the mobile, tablet and widescreen versions should look like.
 
 ---
 
@@ -62,10 +61,10 @@ You will be evaluated on the page you submit. Specifically, we will be looking a
    - Assets/content are where they should be.
    - use of proper HTML tags (think semantic)
 3. Mobile version (less that `768px` wide)
-   - The page looks _decent_ on mobile.
+   - The page looks like the provided mockup.
    - All of the content is visible on mobile.
 4. Animations and effects
-   - At least 1 animation has been implemented. (Animation on the 'cool' box, zoom effect on image, underline hover effect on navbar links)
+   - At least 1 animation has been implemented. (zoom effect on image, underline hover effect on navbar links)
 
 | Goal                      | Weight |
 | ------------------------- | ------ |
@@ -167,4 +166,30 @@ If your CSS rules are getting too complicated (e.g. `.myclassname > .someothercl
 
 ## Screenshot(s)
 
-<img src='./imgs/screenshot.png' />
+### Header
+
+<img src="./screenshots/header.gif" alt="header" />
+
+---
+
+### Gallery
+
+<img src="./screenshots/gallery.gif" alt="gallery" />
+
+---
+
+### Mobile Version
+
+<img src="./screenshots/mobile_view.gif" alt="mobile view" style="width:400px" />
+
+---
+
+### Tablet Version
+
+<img src="./screenshots/tablet_view.gif" alt="tablet view" style="width:800px" />
+
+---
+
+### widescreen Version
+
+<img src="./screenshots/widescreen_view.gif" alt="widescreen view" />
