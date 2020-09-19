@@ -1,3 +1,542 @@
-@import 'css-reset.css';
+@import "css-reset.css";
 
-/* CSS here :) */
+:root {
+    --bg-color: #404040;
+    --bg-color-hover: #484848;
+    --font-size-small: 0.8rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: var(--bg-color);
+}
+
+.logo {
+    line-height: 0px;
+}
+
+.desktop-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    color: white;
+}
+
+.features-animation {
+    position: relative;
+    top: 3px;
+}
+
+.features-animate {
+    position: relative;
+    top: 12px;
+    height: 3px;
+}
+
+.features-animation:hover + .features-animate .features-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    width: 1px;
+    transform: scaleX(62);
+    transform-origin: left;
+    animation: features-animation 0.3s ease;
+}
+
+@keyframes features-animation {
+    0% { transform: scaleX(0) }
+    100% { transform: scaleX(62) }
+}
+
+.advantages-animation {
+    position: relative;
+    top: 3px;
+}
+
+.advantages-animate {
+    position: relative;
+    top: 12px;
+    height: 3px;
+}
+
+.advantages-animation:hover + .advantages-animate .advantages-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    width: 1px;
+    transform: scaleX(87);
+    transform-origin: left;
+    animation: advantages-animation 0.3s ease;
+}
+
+@keyframes advantages-animation {
+    0% { transform: scaleX(0) }
+    100% { transform: scaleX(87) }
+}
+
+.gallery-animation {
+    position: relative;
+    top: 3px;
+}
+
+.gallery-animate {
+    position: relative;
+    top: 12px;
+    height: 3px;
+}
+
+.gallery-animation:hover + .gallery-animate .gallery-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    width: 1px;
+    transform: scaleX(50);
+    transform-origin: left;
+    animation: gallery-animation 0.3s ease;
+}
+
+@keyframes gallery-animation {
+    0% { transform: scaleX(0) }
+    100% { transform: scaleX(50) }
+}
+
+.mobile-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.mobile-dropdown img {
+    cursor: pointer;
+}
+.mobile-nav ul {
+    list-style-type: none;
+}
+
+.dropdown-content {
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 150px;
+    z-index: 1;
+    background-color: var(--bg-color);
+}
+
+.dropdown-content--item {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.mobile-dropdown:hover .dropdown-content {
+    visibility: visible;
+}
+
+.dropdown-content--item:hover {
+    visibility: visible;
+    background-color: var(--bg-color-hover);
+}
+
+.dropdown-content--item a {
+    display: block;
+}
+
+.bg-image {
+    min-height: 700px;
+    background-image: url("../imgs/bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.desktop-intro {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 300px;
+    border: 5px solid white;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 195px;
+    margin: 0 auto;
+}
+
+.mobile-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    position: relative;
+    top: 80px;
+    margin: 0 auto;
+}
+
+.desktop-title {
+    width: 40%;
+    font-size: 3rem;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mobile-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.intro-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(64,64,64,0.5);
+}
+
+.mobile-intro-text {
+    font-size: 2rem;
+    padding: 20px;
+    background-color: rgba(64,64,64,0.5);
+}
+
+.subtitle {
+    font-size: 2rem;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.mobile-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subtext {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 1 0px;
+    align-items: center;
+    font-size: 0.7rem;
+    border-top: 1px dashed white;
+}
+
+.mobile-subtext {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.subtext-column {
+    padding: 5px;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.feature-1, .feature-2, .feature-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    line-height: 1.2;
+    height: 200px;
+    width: 225px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px 2px lightgray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.icon {
+    padding-bottom: 20px;
+}
+
+.feature-text {
+    font-weight: normal;
+    color: gray;
+    height: 100px;
+    padding: 20px 0px 20px;
+}
+
+.feature-button {
+    width: 100%;
+}
+
+.feature-button button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    color: white;
+    background-color: var(--bg-color);
+    cursor: pointer;
+}
+
+.advantages {
+    height: 400px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--bg-color);
+}
+
+.advantages h1 {
+    position: relative;
+    top: 50px;
+    font-size: 3rem;
+    color: white;
+}
+
+.advantages h2 {
+    position: relative;
+    top: 75px;
+    font-size: 1rem;
+    color: white;
+}
+
+.gradient {
+    height: 400px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: linear-gradient(to left, dodgerblue, white);
+}
+
+.gradient h1 {
+    position: relative;
+    text-align: right;
+    top: 50px;
+    font-size: 3rem;
+    color: white;
+}
+
+.gradient h2 {
+    position: relative;
+    text-align: right;
+    top: 75px;
+    font-size: 1rem;
+    color: white;
+}
+
+.small-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    background-color: var(--bg-color);
+    color: white;
+    border: 5px solid white;
+    position: relative;
+    top: 345px;
+}
+
+.font-red {
+    color: red;
+}
+
+.font-tiny {
+    font-size: 0.6rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 0;
+}
+
+.cell {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 33.33%;
+    overflow: hidden;
+}
+
+.caption {
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px gray;
+    color: white;
+    visibility: hidden;
+}
+
+.cell > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cell > img:hover {
+    transform: scale(1.2);
+}
+
+.cell > img:hover + .caption {
+    visibility: visible;
+}
+
+.register {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: var(--font-size-small);
+    border-bottom: 1px solid lightgray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email {
+    float: left;
+    height: 31px;
+    border: 1px solid lightgray;
+    border-right-width: 2px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    outline: none;
+}
+
+.submit {
+    background-image: url("../imgs/icon_send.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: lightgray;
+    width: 50px;
+    height: 35px;
+    border: 1px solid lightgray;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.email-checkbox input, .email-checkbox label {
+    display: block;
+}
+
+.email-checkbox label {
+    padding-bottom: 5px;
+}
+
+#checkbox {
+    margin: 0;
+}
+
+.cat-images {
+    padding-top: 5px;
+}
+
+.desktop-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 2;
+    width: 90%;
+    font-size: var(--font-size-small);
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+.mobile-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 2;
+    width: 90%;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.link {
+    flex-basis: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.desktop-footer a,
+.mobile-footer a {
+    color: gray;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+    .mobile-nav,
+    .mobile-intro,
+    .mobile-footer {
+        display: none;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+    .desktop-nav,
+    .desktop-intro,
+    .desktop-footer {
+        display: none;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        height: 800px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .small-box {
+        margin: 0 auto;
+    }
+}

@@ -1,15 +1,236 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <!-- write some HTML! -->
-  </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a class="logo" href="#"><img src="imgs/logo.svg" width="40" alt="logo"></a>
+
+      <nav class="desktop-nav">
+        <ul>
+          <li>
+            <a class="features-animation" href="#features-section">Features</a>
+            <div class="features-animate">
+              <div class="features-line"></div>
+            </div>
+          </li>
+          <li>
+            <a class="advantages-animation" href="#advantages-section">Advantages</a>
+            <div class="advantages-animate">
+              <div class="advantages-line"></div>
+            </div>
+          </li>
+          <li>
+            <a class="gallery-animation" href="#gallery-section">Gallery</a>
+            <div class="gallery-animate">
+              <div class="gallery-line"></div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="mobile-nav">
+        <div class="mobile-dropdown">
+          <img src="imgs/menu.svg" alt="hamburger"/>
+          <ul class="dropdown-content">
+            <li class="dropdown-content--item"><a href="#features-section">Features</a></li>
+            <li class="dropdown-content--item"><a href="#advantages-section">Advantages</a></li>
+            <li class="dropdown-content--item"><a href="#gallery-section">Gallery</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div class="bg-image">
+    <div class="desktop-intro">
+      <div class="desktop-title">Introducing Falcon 9</div>
+      <div class="intro-text">
+        <div class="subtitle">
+          We make dreams come true
+        </div>
+        <div class="subtext">
+          <div class="subtext-column">
+            Morbi congue nibh urna. Morbi egestas
+            ullamcorper tortor a facilisis. Vivamus
+            eget dolor sem. Vivamus pellentesque
+            eget quam ut bibendum. Praesent at sagittis
+          </div>
+          <div class="subtext-column">
+            sagittis risus, eget placerat
+            magna. Mauris justo ipsum, volutpat et
+            porta id, sagittis vitae nisl. Praesent
+            mauris tortor, blandit eu aliquet eu.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-intro">
+      <div class="mobile-title">Introducing Falcon 9</div>
+      <div class="mobile-intro-text">
+        <p class="mobile-subtitle">We make dreams come true</p>
+        <div class="mobile-subtext">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Morbi rhoncus ex vel
+          sem auctor, non condimentum felis
+          ultrices. Pellentesque habitant morbi
+          tristique senectus et netus et malesuada
+          fames ac turpis egestas. In quis congue
+          erat. Maecenas sed sapien vehicula, vestibulum
+          arcu sit amet, maximus dolor. Nullam eget
+          justo imperdiet tellus viverra pretium id
+          non lectus.
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <section id="features-section">
+    <div class="features">
+      <div class="feature-1">
+        <img class="icon" src="imgs/icon_check.svg" width="50" alt="icon-check">
+        Amazing feature 1
+        <div class="feature-text">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. In efficitur turpis at
+          sodales lacinia.
+        </div>
+        <div class="feature-button">
+          <button class="button">Get It</button>
+        </div>
+      </div>
+      <div class="feature-2">
+        <img class="icon" src="imgs/icon_reload.svg" width="50" alt="icon-reload">
+        Amazing feature 2
+        <div class="feature-text">
+          Suspendisse at nisi luctus, rhoncus
+          felis in, laoreet arcu.
+        </div>
+        <div class="feature-button">
+          <button class="button">Sell It</button>
+        </div>
+      </div>
+      <div class="feature-3">
+        <img class="icon" src="imgs/icon_fingerprint.svg" width="50" alt="icon-fingerprint">
+        Amazing feature 3
+        <div class="feature-text">
+          Pellentesque quis lobortis nunc. Duis eget
+          tristique tellus, sed commodo enim. In
+          ligula consequat, velit non.
+        </div>
+        <div class="feature-button">
+          <button class="button">Do It</button>
+        </div>
+      </div>
+  </section>
+  <section id="advantages-section">
+    <div class="advantages">
+      <div class="small-box">
+        <p class="font-red">This looks cool</p>
+        <p class="font-tiny">Sorry, no animations for you today</p>
+      </div>
+      <h1>
+        Some cool text
+      </h1>
+      <h2>
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Phasellus id eros
+        nisi. Vestibulum enim tortor, tristique
+        vitae libero in, bibendum mollis
+        massa.
+      </h2>
+    </div>
+    <div class="gradient">
+      <h1>
+        Slick gradient
+      </h1>
+      <h2>
+        Lorem ipsum?
+      </h2>
+  </section>
+  <section id="gallery-section">
+    <div class="row">
+      <div class="cell">
+        <img src="imgs/tesla.jpg" alt="tesla">
+        <div class="caption">Our flagship car: The model S</div>
+      </div>
+      <div class="cell">
+        <img src="imgs/procat.jpg" alt="procat">
+        <div class="caption">Cool cat</div>
+      </div>
+      <div class="cell">
+        <img src="imgs/hyperloop.jpg" alt="hyperloop">
+        <div class="caption">Introducing: The Hyperloop</div>
+      </div>
+      <div class="cell">
+        <img src="imgs/sneakycat.jpg" alt="sneaky-cat">
+        <div class="caption">So sneaky</div>
+      </div>
+      <div class="cell">
+        <img src="imgs/falconrocket.jpeg" alt="falcon-rocket">
+        <div class="caption">BFR - Big Falcon Rocket</div>
+      </div>
+      <div class="cell">
+        <img src="imgs/funnycat.jpg" alt="funny-cat">
+        <div class="caption">So much fun</div>
+      </div>
+  </section>
+  <section class="register">
+    <form>
+      <div>
+        <div class="email-checkbox">
+          <label for="email">Register to our mailing list:</label>
+          <input class="email" id="email" type="email" required>
+          <button class="submit"></button>
+        </div>
+        <div class="cat-images">
+          <input type="checkbox" id="checkbox">
+          <label for="checkbox">Send me daily cat images</label>
+        </div>
+      </div>
+    </form>
+  </section>
+  <nav class="desktop-footer">
+    <div class="link"><a href="#">About us</a></div>
+    <div class="link"><a href="#">About us</a></div>
+    <div class="link"><a href="#">About us</a></div>
+    <div class="link"><a href="#">About us</a></div>
+    <div class="link"><a href="#">Privacy Policy</a></div>
+    <div class="link"><a href="#">Privacy Policy</a></div>
+    <div class="link"><a href="#">Privacy Policy</a></div>
+    <div class="link"><a href="#">Privacy Policy</a></div>
+    <div class="link"><a href="#">Legal notes</a></div>
+    <div class="link"><a href="#">Legal notes</a></div>
+    <div class="link"><a href="#">Legal notes</a></div>
+    <div class="link"><a href="#">Legal notes</a></div>
+    <div class="link"><a href="#">Copyright</a></div>
+    <div class="link"><a href="#">Copyright</a></div>
+    <div class="link"><a href="#">Copyright</a></div>
+    <div class="link"><a href="#">Copyright</a></div>
+  </nav>
+  <nav class="mobile-footer">
+    <div class="link"><a href="#">About us</a></div>
+    <div class="link"><a href="#">Privacy Policy</a></div>
+    <div class="link"><a href="#">Legal notes</a></div>
+    <div class="link"><a href="#">Copyright</a></div>
+    <div class="link"><a href="#">About us</a></div>
+    <div class="link"><a href="#">Privacy Policy</a></div>
+    <div class="link"><a href="#">Legal notes</a></div>
+    <div class="link"><a href="#">Copyright</a></div>
+    <div class="link"><a href="#">About us</a></div>
+    <div class="link"><a href="#">Privacy Policy</a></div>
+    <div class="link"><a href="#">Legal notes</a></div>
+    <div class="link"><a href="#">Copyright</a></div>
+    <div class="link"><a href="#">About us</a></div>
+    <div class="link"><a href="#">Privacy Policy</a></div>
+    <div class="link"><a href="#">Legal notes</a></div>
+    <div class="link"><a href="#">Copyright</a></div>
+  </nav>
+</body>
+
 </html>
